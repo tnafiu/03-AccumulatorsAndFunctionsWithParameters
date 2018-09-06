@@ -333,8 +333,8 @@ def fancy_sums_of_digits(n):
     #    the    sum_of_digits    function that is DEFINED ABOVE.
     ####################################################################
     # ------------------------------------------------------------------
-    x = sum_of_digits(n) ** 1000
-    y = sum_of_digits(n) ** 999
+    x = sum_of_digits(n ** 1000)
+    y = sum_of_digits(n ** 999)
     fancy_exponent = x ** y
     fancy_sum = sum_of_digits(fancy_exponent)
     return fancy_sum
